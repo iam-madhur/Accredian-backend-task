@@ -2,7 +2,7 @@ module.exports = {
   prismaClient: {
     datasources: [
       {
-        url: "your_db_link",
+        url: process.env.DATABASE_URL,
         driver: "@prisma/mysql",
       },
     ],
